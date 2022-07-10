@@ -1,0 +1,115 @@
+.mainContent {
+  margin-top: 10px;
+
+  flex: 1;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 20px;
+  .leftContent{
+    position: relative;
+    width: 700px;
+    min-height: 610px;
+    height: 100%;
+    padding: 60px 60px;
+    box-sizing: border-box;
+    border-image: url('../../images/left-content-bg.png') 140 140 140 140 fill / 100px stretch;
+    flex: 1;
+    margin-left: 20px;
+  }
+  .rightContent{
+    height: 811px;
+    align-self: center;
+    border-image: url('../../images/right-content-bg.png') 140 140 140 140 fill / 100px stretch;
+    position: relative;
+    padding: 60px 60px 70px 60px;
+    width: 480px;
+    margin-right: 20px;
+    box-sizing: border-box;
+  }
+}
+
+.centerPointLeft{
+  position: absolute;
+  left: -60px;
+  top: 50%;
+  transform: translateY(-50%);
+
+}
+.centerPointRight{
+  position: absolute;
+  right: -60px;
+  top: 50%;
+  transform: translateY(-50%);
+
+}
+
+.leftTopBorder{
+  position: absolute;
+  left: -10px;
+  top: 0;
+  width: calc(50% - 30px);
+  height: calc(50% - 30px);
+  border-width: 100px;
+  border-image: url('../../images/left-top-border.svg');
+  border-image-slice: 100 100 100 100 fill;
+  border-image-width: 100px;
+}
+.leftBottomBorder{
+  position: absolute;
+  bottom: 0;
+  left: -10px;
+  width: calc(50% - 30px);
+  height: calc(50% - 30px);
+  border-width: 100px;
+  border-image: url('../../images/left-bottom-border.svg');
+  border-image-slice: 100 100 100 100 fill;
+  border-image-width: 100px;
+}
+.rightBottomBorder{
+  position: absolute;
+  bottom: 0;
+  right: -8px;
+  width: calc(50% - 30px);
+  height: calc(50% - 30px);
+  border-width: 100px;
+  border-image: url('../../images/right-bottom-border.svg');
+  border-image-slice: 100 100 100 100 fill;
+  border-image-width: 100px;
+}
+.rightTopBorder{
+  position: absolute;
+  top: 0;
+  right: -8px;
+  width: calc(50% - 30px);
+  height: calc(50% - 30px);
+  border-width: 100px;
+  border-image: url('../../images/right-top-border.svg');
+  border-image-slice: 100 100 100 100 fill;
+  border-image-width: 100px;
+}
+.centerBg{
+  width: 90px;
+  position: absolute;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 36px;
+  .square{
+    width: 16px;
+    height: 16px;
+    background: #4CCEF8;
+    box-shadow: -1px 0px 12px rgba(102, 218, 255, 0.8);
+  }
+}
+.centerBgLeft{
+
+  top: 50%;
+  transform: translateY(-50%) translateX(-60%);
+  left: 0;
+}
+.centerBgRight{
+  top: 50%;
+  transform: translateY(-50%) translateX(60%);
+  right: 0;
+}

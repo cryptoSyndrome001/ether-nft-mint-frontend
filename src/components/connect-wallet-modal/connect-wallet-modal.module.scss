@@ -1,0 +1,35 @@
+.wrapper {
+  z-index: 100;
+  position: fixed;
+  background: rgba(0, 0, 0, .9);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: scale(0);
+
+  .content {
+    box-sizing: border-box;
+    width: 843px;
+    height: 504px;
+    background: url('../../images/connect-modal-bg.svg') no-repeat;
+    padding-top: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+
+    .btn {
+      width: 630px;
+      height: 73px;
+      background: url('../../images/metamask.svg');
+      cursor: pointer;
+
+    }
+  }
+}
+.show {
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  transform: scale(1);
+}

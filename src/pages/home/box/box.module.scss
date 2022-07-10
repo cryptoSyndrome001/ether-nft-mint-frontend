@@ -1,0 +1,131 @@
+.box {
+  width: 144px;
+  height: 225px;
+  position: relative;
+
+  .openCover {
+    &:hover {
+      .boxBg {
+        transform: scale(1);
+      }
+    }
+
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    top: 0;
+    background: url('../../../images/box-bg.png') no-repeat;
+    background-size: cover;
+
+    .boxBg {
+      transform: scale(0);
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      top: 0;
+      z-index: 1;
+      background: rgba(#000, .8);
+      display: flex;
+      padding: 0 10px;
+      box-sizing: border-box;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .boxWaitingOpen {
+      transform: scale(1);
+    }
+
+    .openBtn {
+      z-index: 10;
+      line-height: 24px;
+      text-align: center;
+      width: 100%;
+      height: 24px;
+      background: url('../../../images/open-bg.svg') no-repeat;
+      background-size: cover;
+      color: #000;
+      font-size: 12px;
+      font-weight: 500;
+      cursor: pointer;
+    }
+  }
+
+  .prize {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    transform-style: preserve-3d;
+    .prizeFront {
+      transition: 1s;
+      &:hover {
+        transform: scale(1.2);
+      }
+    }
+
+    img {
+      position: absolute;
+      backface-visibility: hidden;
+      width: 144px;
+      height: 225px;
+    }
+  }
+
+  .getPrice {
+    position: absolute;
+    opacity: 0;
+    visibility: hidden;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    transform-style: preserve-3d;
+    .prizeBack {
+
+    }
+
+    .prizeFront {
+      transform-style: preserve-3d;
+      transform: rotateY(180deg);
+      transition: 1s;
+      &:hover {
+        transform: rotateY(180deg) scale(1.2);
+      }
+
+
+    }
+    img {
+      position: absolute;
+      backface-visibility: hidden;
+      width: 144px;
+      height: 225px;
+    }
+
+  }
+
+  .hidden {
+    visibility: hidden;
+    opacity: 0;
+    z-index: -10;
+  }
+
+  .getPriceShow {
+    visibility: visible;
+    opacity: 1;
+    animation: round2 .5s ease-in forwards;
+
+  }
+
+  @keyframes round2 {
+    0% {
+      transform: rotate3d(0, 1, 0, 0deg);
+    }
+    100% {
+      transform: rotate3d(0, 1, 0, 180deg);
+    }
+  }
+}

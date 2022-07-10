@@ -1,0 +1,132 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 70px;
+
+  .left {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 72px;
+
+  }
+
+  .logo {
+
+  }
+
+  .nav {
+    color: #fff;
+    display: flex;
+    justify-content: flex-start;
+    gap: 24px;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 700;
+
+    & > div {
+      cursor: pointer;
+      height: 42px;
+      line-height: 42px;
+      position: relative;
+
+      &::after {
+        left: 0;
+        bottom: 0;
+        content: ' ';
+        position: absolute;
+        height: 2px;
+        width: 100%;
+        background: #4CCEF8;
+        transform: scale(0);
+        transition: all 100ms ease-in;
+      }
+      &:hover{
+        color: #4CCEF8;
+        &::after{
+          transform: scale(1);
+        }
+      }
+    }
+    .active{
+      color: #4CCEF8;
+      &::after{
+        transform: scale(1);
+      }
+    }
+  }
+
+  .right {
+
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 60px;
+  }
+
+  .iconList {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 30px;
+
+    & > div {
+      cursor: pointer;
+    }
+
+  }
+
+  .connectWallet {
+    width: 176px;
+    height: 42px;
+    background-image: url('../../images/btn-bg.svg');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    line-height: 42px;
+    text-align: center;
+    cursor: pointer;
+    font-size: 12px;
+    color: #1a1a1a;
+    font-weight: 600;
+    text-transform: uppercase;
+    position: relative;
+
+    .accountId{
+      padding-right: 46px;
+      text-align: center;
+      width: 100%;
+    }
+    .userAddressRightBg{
+      position: absolute;
+      right: 0;
+      top: 0;
+      background-image: url('../../images/user-address-right.svg');
+      background-repeat: no-repeat;
+      background-size: 100%;
+      width: 46px;
+      height: 42px;
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+}
+
+.languageRow{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 18px;
+  padding: 0 10px
+
+}
+.disconnectRow{
+  color: #FFFF00;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 10px;
+  padding: 0 30px
+}

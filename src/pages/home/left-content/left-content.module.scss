@@ -1,0 +1,66 @@
+.container {
+  color: #fff;
+  padding: 5px 20px 40px 20px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  position: relative;
+
+  .loadingArea{
+    position:absolute;
+    left: 0;
+    bottom:0;
+    top: 0;
+    right: 0;
+    z-index: 10;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+
+  }
+
+
+  .topArea {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .refresh {
+      width: 42px;
+      height: 28px;
+      cursor: pointer;
+    }
+
+  }
+
+  .centerArea {
+    flex: 1;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+    .boxList {
+      height: 100%;
+      width: 100%;
+      display: flex;
+      justify-content: flex-start;
+      align-items: flex-start;
+      gap: 16px 30px;
+      flex-wrap: wrap;
+      flex: 1;
+      flex-grow: 0;
+    }
+  }
+
+  .bottomArea {
+    color: #fff;
+
+
+  }
+
+}

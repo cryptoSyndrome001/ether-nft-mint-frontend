@@ -1,0 +1,32 @@
+body {
+    margin: 0;
+    font-family: tomorrow, sans-serif;
+}
+@font-face{
+    font-family: 'tomorrow';
+    src: url('/fonts/tomorrow/Tomorrow-Bold.ttf');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face{
+    font-family: 'tomorrow';
+    src: url('/fonts/tomorrow/Tomorrow-SemiBold.ttf');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face{
+    font-family: 'tomorrow';
+    src: url('/fonts/tomorrow/Tomorrow-Medium.ttf');
+    font-weight: 500;
+    font-style: normal;
+}
+@font-face{
+    font-family: 'tomorrow';
+    src: url('/fonts/tomorrow/Tomorrow-Regular.ttf');
+    font-weight: 400;
+    font-style: normal;
+}
+
+

@@ -1,0 +1,140 @@
+.rightContent {
+  width: 346px;
+  margin: 0 auto;
+
+  .boxShow {
+    margin: 24px auto;
+
+    width: 150px;
+    height: 240px;
+
+    img {
+      height: 240px;
+      width: 150px;
+    }
+  }
+
+  .handleArea {
+
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .handleNum {
+    width: 233px;
+    height: 54px;
+    background-image: url('../../../images/btn-num.svg');
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+
+    .num {
+      color: #fff;
+      font-size: 24px;
+      font-weight: 600;
+    }
+
+    div:nth-child(1) {
+      width: 24px;
+      height: 24px;
+      cursor: pointer;
+      user-select: none;
+    }
+
+    div:nth-child(2) {
+      width: 60px;
+      text-align: center;
+      user-select: none;
+    }
+
+    div:nth-child(3) {
+      width: 24px;
+      height: 24px;
+      cursor: pointer;
+      user-select: none;
+    }
+  }
+
+  .handleFive {
+    width: 103px;
+    height: 54px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    user-select: none;
+
+    svg {
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      top: 0;
+      z-index: -1;
+    }
+
+    .addFive {
+      color: #fff;
+      font-size: 24px;
+      font-weight: 600;
+
+    }
+  }
+
+  .buyInfo {
+    margin-top: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+
+    .buyInfoRow {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      color: #fff;
+      font-size: 16px;
+      font-weight: 500;
+
+      span:nth-child(2) {
+        font-weight: 600;
+
+      }
+    }
+
+
+  }
+
+  .btnMint {
+    cursor: pointer;
+    margin: 26px 0;
+    color: #000;
+    font-size: 18px;
+    font-weight: 500;
+    height: 40px;
+    line-height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    position: relative;
+
+    .mintBg {
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      z-index: -1;
+    }
+  }
+
+  .desc {
+    font-size: 12px;
+    color: rgba(#fff, 0.6);
+  }
+
+}

@@ -1,0 +1,39 @@
+.footer{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 60px;
+  background: linear-gradient(90deg, rgba(25, 40, 45, 0.43) 0%, #19282D 50.18%, rgba(28, 46, 52, 0.43) 97.33%);
+  padding: 0 60px;
+}
+.inProgress{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 13px;
+}
+.animationProgress{
+  $time: 3s;
+  @for $i from 1 to 11 {
+    svg:nth-child(#{$i}) {
+      animation: lineArr 3s linear ($i * 0.1 * $time)  infinite;
+    }
+  }
+  @keyframes lineArr {
+    0% {
+      fill: #ddd;
+      stroke: #ddd;
+    }
+    100%{
+      fill: red;
+      stroke: #00FF85;
+    }
+  }
+
+}
+.number{
+  color: #4CCEF8;
+  text-shadow: 0px 0px 20px rgba(76, 206, 248, 0.8);
+  font-size: 28px;
+  font-weight: 500;
+}

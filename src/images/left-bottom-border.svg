@@ -1,0 +1,32 @@
+<svg width="644" height="357" viewBox="0 0 644 357" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M634.616 338.877L395.439 338.85L17.9707 338.46L18.4959 36.6406L49.4496 0.384033" stroke="#2B515E"/>
+<path d="M25.9338 56.5543L25.966 48.3126L25.9981 40.0709L54.9494 6.37537" stroke="#4DCEF6" stroke-width="3"/>
+<g filter="url(#filter0_d_103_21816)">
+<path d="M634.823 338.699L595.023 338.672" stroke="#4CCEF8" stroke-width="3"/>
+</g>
+<g filter="url(#filter1_d_103_21816)">
+<path d="M44.8611 349H10.8806V323.039" stroke="#4CCEF8" shape-rendering="crispEdges"/>
+</g>
+<defs>
+<filter id="filter0_d_103_21816" x="584.022" y="328.172" width="59.8022" height="23.027" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+<feOffset dx="-1" dy="1"/>
+<feGaussianBlur stdDeviation="5"/>
+<feComposite in2="hardAlpha" operator="out"/>
+<feColorMatrix type="matrix" values="0 0 0 0 0.298039 0 0 0 0 0.807843 0 0 0 0 0.972549 0 0 0 1 0"/>
+<feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_103_21816"/>
+<feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_103_21816" result="shape"/>
+</filter>
+<filter id="filter1_d_103_21816" x="0.380615" y="314.039" width="50.4805" height="42.4612" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+<feOffset dx="-2" dy="-1"/>
+<feGaussianBlur stdDeviation="4"/>
+<feComposite in2="hardAlpha" operator="out"/>
+<feColorMatrix type="matrix" values="0 0 0 0 0.298039 0 0 0 0 0.807843 0 0 0 0 0.972549 0 0 0 0.52 0"/>
+<feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_103_21816"/>
+<feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_103_21816" result="shape"/>
+</filter>
+</defs>
+</svg>
